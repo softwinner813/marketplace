@@ -23,7 +23,7 @@ class BitcoinConverter
     {
         $btcprice = Cache::remember('btc_price',config('coins.caching_price_interval'),function(){
             // get bitcoin price
-            $url = "https://blockchain.info/ticker/";
+            $url = "https://blockchain.info/ticker";
             $json = json_decode(file_get_contents($url), true);
             $btcUsd = $json["USD"]["last"];
 
@@ -46,7 +46,7 @@ class BitcoinConverter
     {
         $btcprice = Cache::remember('btc_price',config('coins.caching_price_interval'),function(){
             // get bitcoin price
-            $url = "https://blockchain.info/ticker/";
+            $url = "https://blockchain.info/ticker";
             $json = json_decode(file_get_contents($url), true);
             $btcUsd = $json["USD"]["last"];
 
