@@ -38,9 +38,7 @@
                             <td class="leading-tight font-mono  text-gray-500">Total Orders:</td>
                             <td class="text-right ">
                                 <span class="leading-tight font-mono   text-light ">
-                                    @if(!is_null(auth()->user()->purchases))
-                                    {{count(auth()->user()->purchases) }}
-                                    @endif
+                                    
                                 </span>
                             </td>
                         </tr>
