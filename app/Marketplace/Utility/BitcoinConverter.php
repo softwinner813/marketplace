@@ -23,9 +23,9 @@ class BitcoinConverter
     {
         $btcprice = Cache::remember('btc_price',config('coins.caching_price_interval'),function(){
             // get bitcoin price
-            $url = "https://www.bitstamp.net/api/ticker/";
+            $url = "https://blockchain.info/ticker/";
             $json = json_decode(file_get_contents($url), true);
-            $btcUsd = $json["last"];
+            $btcUsd = $json["USD"]["last"];
 
             return $btcUsd;
         });
@@ -46,9 +46,9 @@ class BitcoinConverter
     {
         $btcprice = Cache::remember('btc_price',config('coins.caching_price_interval'),function(){
             // get bitcoin price
-            $url = "https://www.bitstamp.net/api/ticker/";
+            $url = "https://blockchain.info/ticker/";
             $json = json_decode(file_get_contents($url), true);
-            $btcUsd = $json["last"];
+            $btcUsd = $json["USD"]["last"];
 
             return $btcUsd;
         });
