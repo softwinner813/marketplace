@@ -63,31 +63,7 @@
 
             <div class="row mt-4">
 
-                <div class="col-md-4">
-                    <h4>
-                        Top Vendors
-                    </h4>
-                    <hr>
-                    @if(count(\App\Vendor::topVendors() ) > 0)
-                        @foreach(\App\Vendor::topVendors() as $vendor)
-                            <table class="table table-borderless table-hover">
-                                <tr>
-                                    <td>
-                                        <a href="{{route('vendor.show',$vendor)}}"
-                                           style="text-decoration: none; color:#212529">{{$vendor->user->username}}</a>
-                                    </td>
-                                    <td class="text-right">
-                                        <span class="btn btn-sm @if($vendor->vendor->experience >= 0) btn-primary @else btn-danger @endif active"
-                                              style="cursor:default">Level {{$vendor->getLevel()}}</span>
-
-                                    </td>
-                                </tr>
-                            </table>
-                        @endforeach
-                    @else
-                    <p>no data</p>
-                    @endif
-                </div>
+                
                 <div class="col-md-4">
                     <h4>
                         Latest orders
