@@ -5,8 +5,8 @@
 
 @section('content')
 
-    <div class="row mt-5 justify-content-center px-4 py-3 rounded shadow rounded-md bg-gray-800 shadow-md p-6 mt-4" >
-        <div class="col-md-4 text-center">
+    <div class="row mt-5 justify-content-center " >
+        <div class="col-md-4 text-center px-4 py-3 rounded shadow rounded-md bg-gray-800 shadow-md p-6 mt-4">
             <h2>Forgot your password?</h2>
             <div class="alert alert-warning">
                 Note that you will not be able to read messages encrypted by the key from previous password.

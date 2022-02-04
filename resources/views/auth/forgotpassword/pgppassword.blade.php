@@ -4,8 +4,8 @@
 @section('title','Forgot Password')
 
 @section('content')
-    <div class="row mt-5 justify-content-center px-4 py-3 rounded shadow rounded-md bg-gray-800 shadow-md p-6 mt-4" >
-        <div class="col-md-6 text-center">
+    <div class="row mt-5 justify-content-center " >
+        <div class="col-md-6 text-center px-4 py-3 rounded shadow rounded-md bg-gray-800 shadow-md p-6 mt-4">
 
             <h2>Reset password</h2>
 
