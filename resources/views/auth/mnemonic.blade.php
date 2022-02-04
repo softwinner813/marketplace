@@ -1,11 +1,11 @@
-@extends('master.main')
+@extends('master.main2')
 
 
 @section('title','Mnemonic')
 
 @section('content')
 
-    <div class="row mt-5">
+    <div class="row mt-5 px-4 py-3 rounded shadow rounded-md bg-gray-800 shadow-md p-6 mt-4">
         <div class="col-md-6 offset-md-3">
             <h2>Mnemonic</h2>
 

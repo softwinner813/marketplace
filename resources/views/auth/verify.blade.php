@@ -1,4 +1,4 @@
-@extends('master.main')
+@extends('master.main2')
 
 
 @section('title','Verify login')
