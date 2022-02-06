@@ -35,7 +35,7 @@
                     <div class="form-group">
                         <div class="flex items-center"> <label class="flex items-center" for="login-name"> <i class="gg-profile ml-1 mr-3 text-gray-600 icon-normal"></i> <span class="text-gray-400 text-sm">Login name</span> </label> <a href="#login-name-info" class="ml-auto"> <i class="gg-info text-gray-600 icon-smaller"></i> </a> </div>
                         <!-- <label for="" class="text-light"><i class=" gg-profile text-gray-600 icon-normal"></i> Login User Name</label> -->
-                        <input type="text" class="@error('username',$errors) is-invalid @enderror appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2" placeholder="Username" name="username" id="username" autofocus="">
+                        <input type="text" class="@error('username',$errors) is-invalid @enderror appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2" placeholder="Username"  maxlength="20" name="username" id="username" autofocus="">
                         @error('username',$errors)
                         <p class="text-danger">{{$errors->first('username')}}</p>
                         @enderror

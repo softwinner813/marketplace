@@ -46,7 +46,7 @@ class SignUpRequest extends FormRequest {
             'username.required' => 'Username is required',
             'username.min' => 'Username must have at least 4 characters',
             'username.unique' => 'Account with that username already exists',
-            'username.max' => 'Username cannot be longer than 12 characters',
+            'username.max' => 'Username cannot be longer than 20 characters',
             'username.alpha_num' => 'You can only use alpha-numeric characters for username',
             'password.required' => 'Password is required',
             'password.min' => 'Password must have at least 8 characters',

@@ -50,9 +50,6 @@
             </div>
         </div>
         <div class="col-md-6 space-around">
-            @if(\App\Marketplace\Utility\CurrencyConverter::isEnabled())
-            @include('multicurrency::changeform')
-            @endif
             <div class="mt-3 rounded-md bg-gray-900 px-3 py-2 pb-3">
                 <h3 class="mt-4"><i class="mr-2 fa fa-key"></i>Two Factor Authentication</h3>
                 <hr>

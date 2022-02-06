@@ -17,7 +17,7 @@
                     {{ csrf_field() }}
 
                     <div class="form-group ">
-                        <input type="text" class="form-control @if($errors->has('username')) is-invalid @endif" placeholder="Username" name="username" id="username">
+                        <input type="text" class="form-control @if($errors->has('username')) is-invalid @endif  appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2" placeholder="Username" name="username" id="username">
                         @if($errors->has('username'))
                             <p class="text-danger">{{$errors->first('username')}}</p>
                         @endif
