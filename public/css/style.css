@@ -194,3 +194,9 @@ a.text-dark:hover{
     color: #a0aebc;
     margin-right: 30px;
   }
+
+@media only screen and (max-width: 768px) {
+  .sm-mt-3 {
+    margin-top: .75rem;
+  }
+}
