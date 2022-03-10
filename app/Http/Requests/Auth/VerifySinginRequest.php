@@ -36,7 +36,7 @@ class VerifySinginRequest extends FormRequest
         if(Hash::check($this -> validation_string, session() -> get('login_validation_string'))){
             session() -> forget('login_validation_string');
             session() -> forget('login_encrypted_message');
-            return redirect()->route('profile.index');
+            return redirect()->route('search.show');
         }
         else
             throw new RequestException("Your validation string is not correct!");
