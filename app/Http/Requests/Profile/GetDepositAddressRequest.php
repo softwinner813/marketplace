@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use App\Marketplace\Payment\BitcoinPayment;
 use App\Marketplace\Payment\MoneroPayment;
 use App\Deposit;
+use Illuminate\Support\Facades\Auth;
 
 class GetDepositAddressRequest extends FormRequest
 {
@@ -45,6 +46,7 @@ class GetDepositAddressRequest extends FormRequest
             $newAddress = $payment->generateAddress();
 
             $deposit = new Deposit();
+            $deposit->user_id = Auth::user()->id;
             $deposit->address = $newAddress;
             $deposit->coin = $this->coin;
             // $deposit->created_at = Date('Y-m-');
