@@ -28,7 +28,7 @@ class Deposit extends Model
      */
     public static function newDeposits()
     {
-        return self::where('status', 0)->where('id', Auth::user()->id)->get();
+        return self::where('status', 0)->where('user_id', Auth::user()->id)->get();
     }
 
     /**
@@ -38,7 +38,7 @@ class Deposit extends Model
      */
     public static function frontPage()
     {
-        return self::orderBy('updated_at', 'desc')->where('id', Auth::user()->id)->paginate(config('marketplace.products_per_page'));
+        return self::orderBy('updated_at', 'desc')->where('user_id', Auth::user()->id)->paginate(config('marketplace.products_per_page'));
     }
 
 
