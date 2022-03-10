@@ -27,13 +27,14 @@ class IndexController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function home() {
-        var_dump(!ModuleManager::isEnabled('FeaturedProducts'));
-        if (!ModuleManager::isEnabled('FeaturedProducts'))
-            $featuredProducts = null;
-        else
-            $featuredProducts = FeaturedProducts::get();
+        if (!ModuleManager::isEnabled('FeaturedProducts')) {
 
-        var_dump($featuredProducts);die();
+            $featuredProducts = null;
+        }
+        else {
+            $featuredProducts = FeaturedProducts::get();
+        }
+
         return view('welcome', [
             'productsView' => session() -> get('products_view'),
             'products' => Product::frontPage(),
