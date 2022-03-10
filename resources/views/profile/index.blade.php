@@ -71,8 +71,8 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="col-md-12 pt-3 pr-3 rounded-md bg-gray-900 px-3 pb-3">
+<div class="row pt-3">
+    <div class="col-md-12  pr-3 rounded-md bg-gray-900 px-3 pb-3">
         <h3 class="mt-4"><i class="mr-2 fa fa-link"></i>Referral link</h3>
         <hr>
         <input type="url" readonly
@@ -82,8 +82,8 @@
     </div>
 </div>
 
-<div class="row  ">
-    <div class="col-md-12 pt-3 pr-3 rounded-md bg-gray-900 px-3 pb-3">
+<div class="row pt-3 ">
+    <div class="col-md-12  pr-3 rounded-md bg-gray-900 px-3 pb-3">
         <h3 class="mt-4"><i class="fas fa-coins mr-2"></i>Payment Addresses</h3>
         <hr>
 
