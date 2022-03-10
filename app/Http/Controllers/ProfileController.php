@@ -637,7 +637,7 @@ class ProfileController extends Controller
      */
     public function deposit()
     {
-        var_dump(auth()->id);die();
+        var_dump(Auth::user()->id);die();
         $this->addDepositMoney();
         $deposit_history = Deposit::frontPage();
 
