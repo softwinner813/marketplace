@@ -195,11 +195,19 @@ a.text-dark:hover{
     margin-right: 30px;
   }
 
+/*******************
+ * @Date: 2022.3.8;
+ * @Auth: Genius Dev
+ * @Desc: Mobile Responsive;
+ * */
 @media only screen and (max-width: 768px) {
   .sm-mt-3 {
     margin-top: .75rem;
   }
   .sm-p-2 {
     padding: .5rem;
+  }
+  .sm-p-0 {
+    padding: 0px;
   }
 }

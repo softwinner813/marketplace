@@ -49,7 +49,7 @@
                 </form>
             </div>
         </div>
-        <div class="col-md-6 col-sm-12 p-0 sm-p-2 space-around sm-mt-3">
+        <div class="col-md-6 col-sm-12 sm-p-0 space-around sm-mt-3">
             <div class="rounded-md bg-gray-900 px-3 py-2 pb-3">
                 <h3 class="mt-4"><i class="mr-2 fa fa-key"></i>Two Factor Authentication</h3>
                 <hr>
