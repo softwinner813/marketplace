@@ -199,4 +199,7 @@ a.text-dark:hover{
   .sm-mt-3 {
     margin-top: .75rem;
   }
+  .sm-p-2 {
+    padding: .5rem;
+  }
 }
