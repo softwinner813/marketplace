@@ -43,6 +43,7 @@ use Illuminate\Support\Facades\Storage;
 // ADDED:
 use App\Marketplace\Payment\BitcoinPayment;
 use App\Marketplace\Payment\MoneroPayment;
+use Illuminate\Support\Facades\Auth;
 
 class ProfileController extends Controller
 {
