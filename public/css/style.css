@@ -210,4 +210,7 @@ a.text-dark:hover{
   .sm-p-0 {
     padding: 0px;
   }
+  .sm-mr-1 {
+    margin-right: 0.25rem;
+  }
 }
