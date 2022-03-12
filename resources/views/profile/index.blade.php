@@ -95,7 +95,7 @@
                         <div class="col-md-6">
                             <input type="password"
                                 class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2 appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2-lg d-flex"
-                                name="address" id="address" placeholder="Place your new address(pubkey) here">
+                                name="address" id="address" placeholder="Place your wallet address here">
                         </div>
                         <div class="col-md-2 ">
                             <select name="coin" id="coin"

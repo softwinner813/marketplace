@@ -26,13 +26,13 @@
                             <li>
                                 <a href="{{ route('profile.index') }}" title="Browse setting"
                                     class="py-1 sm:py-0 h-full flex items-center py-1 sm:py-0 h-full flex items-center hover:text-white px-3 transition-colors duration-200text-white px-3">
-                                    <span><i class="fas fa-cogs"></i>&nbsp;Setting</span>
+                                    <span><i class="fas fa-cogs"></i>&nbsp;Settings</span>
                                 </a>
 
                             </li>
                             <li> <a href="{{ route('profile.messages') }}" title="Browse Message"
                                     class="py-1 sm:py-0 h-full flex items-center py-1 sm:py-0 h-full flex items-center hover:text-white px-3 transition-colors duration-200text-white px-3">
-                                    <span><i class="fas fa-comments"></i>&nbsp;MESSAGE
+                                    <span><i class="fas fa-comments"></i>&nbsp;Messages
                                     </span>
 
                                 </a>
