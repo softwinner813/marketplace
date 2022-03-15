@@ -17,7 +17,7 @@
             @endforeach
         </div>
     @else
-        <div class="alert alert-warning">Your wishlist of products is empty!</div>
+        <div class="alert alert-warning">You currently have not added anything to your wishlist!</div>
     @endif
 
 @stop

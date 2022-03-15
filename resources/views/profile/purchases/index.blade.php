@@ -95,7 +95,7 @@
 
     </div>
     @else
-    <div class="alert text-center alert-warning">Your purchase list is empty!</div>
+    <div class="alert text-center alert-warning">Your purchase list is currently empty!</div>
     @endif
 
 

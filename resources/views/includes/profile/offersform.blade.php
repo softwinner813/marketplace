@@ -23,7 +23,7 @@
     </tbody>
     </table>
 @else
-    <div class="alert alert-warning">You don't have any offer please add at least one!</div>
+    <div class="alert alert-warning">You currently do not have any offers please add at least one offer!</div>
 @endif
 
 <h3 class="mt-3">Add offer</h3>

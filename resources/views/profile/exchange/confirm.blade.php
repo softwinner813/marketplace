@@ -4,7 +4,7 @@
 @section('page_title', 'Exchange Confirm')
 
 @section('confirmation-content')
-	<div class="alert text-center alert-warning">This action can't be undone! Confirm that you want to exchange 
+	<div class="alert text-center alert-warning">This action can not be undone! Please Confirm that you want to Exchange 
         @vendor
         <label class="text-warning text-center">${{$balance}} USD 
             &nbsp; TO {{strtoupper($coin)}}

@@ -36,19 +36,19 @@
                     <div class="form-group ">
                         <div class="flex items-center"> <label class="flex items-center" for="login-name"> <i class="gg-profile ml-1 mr-3 text-gray-600 icon-normal"></i> <span class="text-gray-400 text-sm">Enter User Name</span> </label> <a href="#login-name-info" class="ml-auto"> <i class="gg-info text-gray-600 icon-smaller"></i> </a> </div>
                         <!-- <label for="" class="text-light"><i class="fas fa-user-tie"></i> Enter User Name</label> -->
-                        <input type="text" class="@if($errors->has('username')) is-invalid @endif  appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer  border-indigo-400 border-opacity-50 focus:border-2" placeholder="Username" maxlength="20" name="username" id="username">
+                        <input type="text" class="@if($errors->has('username')) is-invalid @endif  appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer  border-indigo-400 border-opacity-50 focus:border-2" placeholder="Username" maxlength="32" name="username" id="username">
                         @if($errors->has('username'))
                         <p class="text-danger">{{$errors->first('username')}}</p>
                         @endif
                     </div>
                     <div class="">
                         <div class="my-1">
-                            <label class="flex items-center" for="password"> <i class="gg-key ml-2 mr-6 text-gray-600"></i> <span class="text-gray-400 text-sm">Enter User Password</span> </label>
-                            <!-- <label for="" class="text-light"><i class="fas fa-key"></i> Enter User Password</label> -->
+                            <label class="flex items-center" for="password"> <i class="gg-key ml-2 mr-6 text-gray-600"></i> <span class="text-gray-400 text-sm">Enter your password</span> </label>
+                            <!-- <label for="" class="text-light"><i class="fas fa-key"></i> Enter your password</label> -->
                             <input type="password" class="@if($errors->has('username')) is-invalid @endif appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer border-indigo-400 border-opacity-50 focus:border-2" placeholder="Password" name="password" id="password">
                         </div>
                         <div class="my-1 mt-3">
-                            <label class="flex items-center mt-2" for=""> <i class="gg-key ml-2 mr-6 text-gray-600"></i> <span class="text-gray-400 text-sm"> Enter User Confirm Password</span> </label>
+                            <label class="flex items-center mt-2" for=""> <i class="gg-key ml-2 mr-6 text-gray-600"></i> <span class="text-gray-400 text-sm"> Enter your password again</span> </label>
                             <!-- <label for="" class="text-light"><i class="fas fa-key"></i></label> -->
                             <input type="password" class="@if($errors->has('username')) is-invalid @endif appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer  border-indigo-400 border-opacity-50 focus:border-2" placeholder="Confirm Password" name="password_confirmation" id="password_confirm">
                         </div>

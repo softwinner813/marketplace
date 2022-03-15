@@ -12,7 +12,7 @@
         <div class="col-md-12">
 
             <a href="{{ route("profile.messages") }}">
-                <h3 class="mb-3">Conversations</h3>
+                <h3 class="mb-3">Message Inbox</h3>
             </a>
             <hr>
 
@@ -20,7 +20,7 @@
                 <div class="list-group mb-3">
                     <a href="{{ route("profile.messages") }}" class="list-group-item list-group-item-action list-group-item-indigo">
                         <i class="fas fa-user-plus"></i>
-                        New Conversation
+                        New Message
                     </a>
                     @foreach($usersConversations as $conversationItem)
                         <a href="{{ route('profile.messages', $conversationItem) }}"
@@ -31,7 +31,7 @@
                                 @if($conversationItem -> unreadMessages() > 0)
                                     <span class="badge badge-warning d-flex align-items-center mx-1 badge-pill">Unread: {{ $conversationItem -> unreadMessages() }}</span>
                                 @endif
-                                <span class="badge badge-info d-flex mx-1 align-items-center badge-pill">Total messages: {{ $conversationItem -> messages() -> count() }}</span>
+                                <span class="badge badge-info d-flex mx-1 align-items-center badge-pill">Total Messages: {{ $conversationItem -> messages() -> count() }}</span>
                                 <span class="badge badge-light d-flex ml-1 align-items-center badge-pill">Updated {{ $conversationItem -> updated_ago }}</span>
                             </span>
                         </a>
@@ -39,7 +39,7 @@
                 </div>
                 {{ $usersConversations -> links('includes.paginate') }}
             @else
-                <div class="alert alert-warning text-center">You don't have any conversations!</div>
+                <div class="alert alert-warning text-center">You currently do not have any messages!</div>
             @endif
         </div>
     </div>

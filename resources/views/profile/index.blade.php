@@ -11,28 +11,28 @@
 <div class="mainOwnDiv">
     <div class="row">
         <div class="col-md-6 rounded-md bg-gray-900 px-3 py-2">
-            <h3 class="mt-4"><i class="fas fa-lock"></i> Change password</h3>
+            <h3 class="mt-4"><i class="fas fa-lock"></i> Change your password</h3>
             <div class="">
                 <hr>
                 <form action="{{ route('profile.password.change') }}" method="POST" class="justify-content-between">
                     {{ csrf_field() }}
                     <div class="my-2">
-                        <label for="old_password" class="col-form-label">Old password:</label>
+                        <label for="old_password" class="col-form-label">Old Password:</label>
                         <input type="password"
                             class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2"
-                            id="old_password" name="old_password" placeholder="Type the old password">
+                            id="old_password" name="old_password" placeholder="Type your old password here">
                     </div>
                     <div class="my-2">
-                        <label for="new_password" class="col-form-label ">New password:</label>
+                        <label for="new_password" class="col-form-label ">New Password:</label>
                         <input type="password"
                             class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2 @error('new_password', $errors) is-invalid @enderror"
-                            id="new_password" name="new_password" placeholder="Type new password">
+                            id="new_password" name="new_password" placeholder="Type your new password here">
                     </div>
                     <div class="my-2">
-                        <label for="cn_password" class="col-form-label ">Confirm password:</label>
+                        <label for="cn_password" class="col-form-label ">Confirm your new password:</label>
                         <input type="password"
                             class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2 @error('new_password', $errors) is-invalid @enderror"
-                            id="cn_password" name="new_password_confirmation" placeholder="Confirm new password">
+                            id="cn_password" name="new_password_confirmation" placeholder="Confirm your new password here">
                     </div>
                     <div class="text-right justify-content-between">
                         <div class="col-md-9 text-left">
@@ -44,7 +44,7 @@
                     <div class="my-2 mt-4">
                         <button
                             class="w-full rounded-md shadow-md text-sm bg-gray-900 px-3 text-gray-400 h-10 border-indigo-400 bg-opacity-50 border-opacity-50 border-2 hover:bg-indigo-400 hover:text-white transition-colors duration-200"
-                            type="submit">Change password</button>
+                            type="submit">Change Password</button>
                     </div>
                 </form>
             </div>
@@ -73,12 +73,12 @@
 
 <div class="row pt-3">
     <div class="col-md-12  pr-3 rounded-md bg-gray-900 px-3 pb-3">
-        <h3 class="mt-4"><i class="mr-2 fa fa-link"></i>Referral link</h3>
+        <h3 class="mt-4"><i class="mr-2 fa fa-link"></i>Referral Link</h3>
         <hr>
         <input type="url" readonly
             class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2 disabled"
             value="{{ route('auth.signup', auth() -> user() -> referral_code) }}">
-        <p class="text-muted">Paste this address to other users who wants to sign up on the market!</p>
+        <p class="text-muted">Send this address to other users that want to sign up on the market!</p>
     </div>
 </div>
 
@@ -100,7 +100,7 @@
                         <div class="col-md-2 ">
                             <select name="coin" id="coin"
                                 class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2 appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2-lg d-flex">
-                                <option>Coin</option>
+                                <option>Crypto</option>
                                 @foreach(config('coins.coin_list') as $supportedCoin => $instance)
                                 <option value="{{ $supportedCoin }}">
                                     {{ strtoupper(\App\Address::label($supportedCoin)) }}
@@ -114,9 +114,9 @@
                         </div>
                     </div>
                 </form>
-                <p class="text-muted">On this address you will receive payments from purchases! Funds will be sent to
+                <p class="text-muted">The wallet address you add here will be used for withdrawals! Withdrawals will be sent to
                     your most
-                    recent added address of coin!</p>
+                    recent added wallet address of each type of coin!</p>
                 
                 
                 @if(auth() -> user() -> addresses -> isNotEmpty())
@@ -143,7 +143,7 @@
                     @endforeach
                 </div>
                 @else
-                <div class="alert text-center alert-warning">You addresses list is empty!</div>
+                <div class="alert text-center alert-warning">You have not added any wallet addresses!</div>
                 @endif
             </div>
         </div>

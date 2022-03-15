@@ -1,6 +1,6 @@
 <div class="rounded-md bg-gray-900 px-3 py-2 mt-3">
 
-    <h3 class="mt-3"><i class="fa fa-cart mr-2"></i>My products</h3>
+    <h3 class="mt-3"><i class="fa fa-cart mr-2"></i>My Products</h3>
     <hr>
 
     @if(auth() -> user() -> products -> isNotEmpty())
@@ -49,7 +49,7 @@
     </div>
     @else
         <div class="alert alert-warning text-center">
-            You don't have any products!
+            You currently do not have any products!
         </div>
     @endif
 </div>

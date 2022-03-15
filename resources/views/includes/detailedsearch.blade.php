@@ -8,16 +8,16 @@
                     <div class="form-group">
                         <label for="search">
                             <i class="fa fa-edit mr-2"></i>
-                            <span class="text-gray-400">Search terms:</span>
+                            <span class="text-gray-400">Search keywords:</span>
                         </label>
                         <input type="text" name="search" id="search" class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2" value="{{app('request')->input('query')}}" placeholder="Search query">
                     </div>
                     <div class="form-group">
                         <label for="user" class="flex">
                             <i class="gg-profile icon-small mr-2 text-gray-600 text-lg"></i>
-                            <span class="text-gray-400">User:</span>
+                            <span class="text-gray-400">Vendor Username: (Optional)</span>
                         </label>
-                        <input type="text" name="user" placeholder="All vendors" id="user" class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2" value="{{app('request')->input('user')}}">
+                        <input type="text" name="user" placeholder="Username of Vendor" id="user" class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2" value="{{app('request')->input('user')}}">
                     </div>
                     <div class="form-group">
                         <label for="" class="">
@@ -56,7 +56,7 @@
                         <div class="mr-2">
                             <label for="">
                                 <i class="fas fa-dollar-sign mr-2 text-gray-600"></i>
-                                <span class="text-gray-400">From:</span>
+                                <span class="text-gray-400">Minimum Price:</span>
                             </label>
                             <input type="number" name="minimum_price" id="" placeholder="$100.00"
                                    class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2" id="product_type" name="product_type" value="{{app('request')->input('price_min')}}" step="0.01">
@@ -64,7 +64,7 @@
                         <div class="">
                             <label for="">
                                 <i class="fas fa-dollar-sign mr-2 text-gray-600"></i>
-                                <span class="text-gray-400">To:</span>
+                                <span class="text-gray-400">Maximum Price:</span>
                             </label>
                             <input type="number" name="maximum_price" id="" placeholder="$10,000.00"
                                    class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2" id="product_type" name="product_type" value="{{app('request')->input('price_max')}}" step="0.01">

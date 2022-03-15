@@ -11,7 +11,7 @@
 
             <div class="mt-3">
                 <div class="form-group">
-                    <p>Decrypt this message in order to get validation string:</p>
+                    <p>Decrypt the following message, and copy and paste the verification code:</p>
                     <textarea name="decrypt_message" class="form-control disabled" rows="8" style="resize: none;" disabled readonly>{{ session() -> get(\App\Marketplace\PGP::NEW_PGP_ENCRYPTED_MESSAGE) }}</textarea>
                 </div>
 

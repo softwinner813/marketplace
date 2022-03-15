@@ -36,7 +36,7 @@
                     Shop with confidence
                 </h6>
                 <div class="text-dark mt-3">
-                    You are Escrow protected for each product in the market!
+                    You are protected with Escrow for every product in the market!
                 </div>
             </div>
         </div>

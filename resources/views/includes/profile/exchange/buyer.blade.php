@@ -61,7 +61,7 @@
                 {{ csrf_field() }}
                 <div class="form-row flex" style="justify-content: flex-between;">
                     <div class="col-md-12 col-sm-12">
-                        <label><i class="fa fa-coins mr-2"></i>Choose coin to exchange</label>
+                        <label><i class="fa fa-coins mr-2"></i>Choose the currency to exchange</label>
                         <select name="coin" id="coin" class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2" value="btc">
                             <!-- <option>Coin</option> -->
                             @foreach(config('coins.coin_list') as $supportedCoin => $instance)
@@ -100,7 +100,7 @@
                     <div class="col-md-12 col-sm-12">
                         <label><i class="fa fa-coins mr-2"></i>Enter amount to exchange</label>
                         <input type="number" step="0.00001" max="100.0" min="0.0001"
-                            class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2" name="balance" id="balance" placeholder="Enter Dollar($) amount:"
+                            class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2" name="balance" id="balance" placeholder="Enter Dollar ($) amount:"
                             value="">
                     </div>
                     

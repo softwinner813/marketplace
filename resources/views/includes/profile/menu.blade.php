@@ -61,7 +61,7 @@
         <label for="new"
             class="@isroute('profile.become') active @endisroute text-sm rounded-md bg-gray-800 text-gray-500 duration-200 transition-colors hover:text-gray-400 border-gray-800 border-2 hover:border-opacity-50 hover:border-indigo-400 shadow-md py-1 px-3 w-full flex cursor-pointer items-center ">
             <i class="far fa-address-card mr-2"></i>
-        Become Vendor
+        Become A Vendor
         </label>
         
     </a>

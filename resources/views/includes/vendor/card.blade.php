@@ -16,10 +16,10 @@
                         </p>
                     </div>
                     @if($vendor->vendor->isTrusted())
-                    <p class="badge badge-success">Trusted vendor <span class="fa fa-check-circle"></span></p>
+                    <p class="badge badge-success">Trusted Vendor <span class="fa fa-check-circle"></span></p>
                     @endif
                     @if($vendor->vendor->isDwc())
-                    <p class="badge badge-danger">Deal with caution <span class="fa fa-exclamation-circle"></span></p>
+                    <p class="badge badge-danger">Deal with Caution <span class="fa fa-exclamation-circle"></span></p>
                     @endif
 
                 </div>
@@ -42,7 +42,7 @@
                         <span class="font-weight-semibold float-right">{{$vendor->memberSince()}}</span>
                     </div>
 
-                    <div class="text-white leading-tight mt-2"><i class="fas fa-poop mr-2 text-gray-500"></i>Disputes in last year
+                    <div class="text-white leading-tight mt-2"><i class="fas fa-poop mr-2 text-gray-500"></i>Disputes within the last year
                         <span class="float-right font-weight-bolder">
                             <span class="badge badge-success">
                                 <i class="far fa-thumbs-up"></i>

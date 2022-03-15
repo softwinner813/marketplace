@@ -1,10 +1,10 @@
 @extends('master.confirmation')
 
-@section('confirmation-title', 'Mark the sale as sent - ' . $purchase-> short_id)
+@section('confirmation-title', 'Mark the Order as Delivered - ' . $purchase-> short_id)
 
 @section('confirmation-content')
 	<div class="alert alert-warning text-center">
-	    This action can't be undone! Confirm that <strong>{{ $purchase -> offer -> product -> name }}</strong> in quantity of <em>{{ $purchase -> quantity }}</em> was delivered to you!
+	    This action can not be undone! Please Confirm that <strong>{{ $purchase -> offer -> product -> name }}</strong> in quantity of <em>{{ $purchase -> quantity }}</em> has been delivered to you!
 	    <br>
 	    Purchase ID: {{ $purchase -> short_id }}
 	</div>

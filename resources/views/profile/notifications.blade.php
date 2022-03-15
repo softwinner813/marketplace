@@ -11,7 +11,7 @@
         <hr>
         <h5 class="flex" style="justify-content: space-between;">
             <div>
-                List of your notifications. You can delete them any time
+                List of your Notifications. You may delete them at any time
             </div>
             <form action="{{route('profile.notifications.delete')}}" method="post" >
                 {{csrf_field()}}
@@ -47,7 +47,7 @@
             </div>
 
             @else
-            <div class="alert text-center alert-warning">Notification list is empty!</div>
+            <div class="alert text-center alert-warning">You currently have no Notifications!</div>
             @endif
         </div>
     </div>

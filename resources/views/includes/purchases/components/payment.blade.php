@@ -38,7 +38,7 @@
                 </label>
             </div>
             <div class="w-full" style="display: flex;  justify-content: space-between;">
-                <label class="">State:</label> 
+                <label class="">Status:</label> 
                 <div class="btn-group">
                     <span class="btn disabled btn-sm @if($purchase -> isPurchased()) btn-primary @else btn-outline-secondary @endif">Purchased</span>
                     @if($purchase->type=='normal')
@@ -63,13 +63,13 @@
                 @if($purchase->type == 'normal' && $purchase -> isPurchased() && $purchase -> isVendor())
                     <a href="{{ route('profile.sales.sent.confirm', $purchase) }}"
                        class="btn btn-outline-mblue"><i class="fas fa-clipboard-check mr-2"></i> Mark as
-                        sent</a>
+                        Sent</a>
                 @endif
 
                  @if($purchase->type == 'normal' && $purchase -> isSent() && $purchase -> isBuyer())
                     <a href="{{ route('profile.purchases.delivered.confirm', $purchase) }}"
                        class="btn btn-outline-success"><i class="fas fa-clipboard-check mr-2"></i> Mark as
-                        delivered</a>
+                        Delivered</a>
                 @endif
 
 
@@ -98,7 +98,7 @@
         {{-- Purchased buyer--}}
         @if($purchase -> isPurchased() && $purchase -> isBuyer() && !$purchase -> enoughBalance())
             <div class="alert alert-warning text-center mt-3">
-                To proceed with purchase send the enough <em>Bitcoin</em> to the address: <span
+                To proceed with the purchase send enough <em>Bitcoin</em> to the wallet address: <span
                         class="badge badge-info">{{ $purchase -> address }}</span>
             </div>
         @endif
@@ -106,20 +106,20 @@
         {{-- Purchased vendor --}}
         @if($purchase -> isVendor() && $purchase -> isPurchased() && $purchase -> enoughBalance())
             <div class="alert alert-warning text-center mt-3">
-                The buyer has paid sufficient amount on the <em>Escrow</em> address. It's recommended to send the
+                The buyer has paid the required amount on the <em>Escrow</em> wallet address. It is recommended to send the
                 goods now!
             </div>
         @elseif($purchase -> isVendor() && $purchase -> isPurchased())
             <div class="alert alert-warning text-center mt-3">
-                The buyer has not paid sufficient amount on the <em>Escrow</em> address. Don't send the goods now!
+                The buyer has not paid the required amount on the <em>Escrow</em> wallet address. Do not send the goods yet!
             </div>
         @endif
 
         {{-- Sent vendor --}}
         @if($purchase -> isBuyer() && $purchase -> isSent())
             <div class="alert alert-warning text-center mt-3">
-                By marking this purchase as delivered you will release the funds from the address to the vendors
-                address.
+                Please Note: By marking this purchase as delivered you will release the funds from the wallet address to the Vendors
+                wallet address.
             </div>
         @endif
 

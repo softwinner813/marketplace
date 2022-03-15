@@ -35,14 +35,14 @@
                             <button class="w-full rounded-md shadow-md text-sm bg-gray-900 px-3 text-gray-400 h-10 border-indigo-400 bg-opacity-50 border-opacity-50 border-2 hover:bg-indigo-400 hover:text-white transition-colors duration-200">Generate Address</button>
                         </div>
                         <div class="col-md-12 mt-4">
-                            <input type="text" class="form-control form-control-md d-flex" name="address" id="address" placeholder="Here will be address to deposit" readonly
+                            <input type="text" class="form-control form-control-md d-flex" name="address" id="address" placeholder="Here will be your wallet deposit address" readonly
                             value="@if($history->isNotEmpty() && $history[0]->status == 0){{$history[0]->address}}@endif">
                         </div>
 
                     </div>
                 </form>
                 <br>
-                <p class="text-muted">Once click GENERATE button, you will get a address to deposit.On this address you will receive coin from deposit! Funds will be charged to your account!</p>
+                <p class="text-muted">After you click the Generate Address button, you will get a new Deposit Wallet Address, any funds sent to this wallet address will be added to your marketplace wallet balance.</p>
 
                 
 
@@ -97,7 +97,7 @@
 
                 </div>
                 @else
-                <div class="alert text-center alert-warning">Your Deposit history is empty!</div>
+                <div class="alert text-center alert-warning">Your Deposit History is empty!</div>
                 @endif
             </div>
         </div>

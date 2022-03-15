@@ -30,7 +30,7 @@
             </div>
             @if($products->count() == 0)
                 <h4>
-                    Couln't find any results for that query, try searching for something else
+                    We could not find any results for that query, try to search for something else
                 </h4>
             @else
                 @if($productsView == 'list')

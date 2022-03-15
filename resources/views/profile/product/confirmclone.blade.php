@@ -10,11 +10,11 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Product cloning - {{$product->name}}</h5>
+                        <h5 class="modal-title">Product Listing Cloning - {{$product->name}}</h5>
 
                     </div>
                     <div class="modal-body">
-                        Clonin product will also duplicate all offers and images. Please confirm product cloning.
+                        Note: Cloning a listing will also duplicate all of the offers and pictures. Please confirm the Product Cloning.
                     </div>
                     <div class="modal-footer text-center justify-content-center">
                         <button type="submit" class="btn btn-success">Confirm</button>

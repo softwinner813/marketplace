@@ -1,18 +1,18 @@
 @extends('includes.profile.addingform')
 
 @section('form-content')
-    <h3>Add digital content</h3>
+    <h3>Add Digital Content</h3>
     <hr>
     <form method="POST" action="{{ route('profile.vendor.product.digital.post', $digitalProduct) }}">
         {{ csrf_field() }}
 
         <div class="form-group">
-            <label for="product_content">Product's content:</label>
+            <label for="product_content">Product's Content:</label>
             <textarea name="product_content" id="product_content"
                       class="form-control @error('content', $errors) is-invalid @enderror" rows="5"
                       placeholder="Details about the product">{{ $digitalProduct -> content }}</textarea>
-            <p class="text-muted">Leave blank, if digital content doesn't have automatic delivery. Otherwise each
-                product put in separated lines!</p>
+            <p class="text-muted">You may leave it blank, if you do not want your Digital Content to have Automatic Delivery, otherwise put each
+                product in a separate line!</p>
             @error('product_content', $errors)
             <div class="invalid-feedback d-block text-center">
                 {{ $errors -> first('product_content') }}
@@ -26,7 +26,7 @@
             <label class="form-check-label" for="autodelivery">
                 Automatic delivery
             </label>
-            <p class="text-muted">If it is checked, quantity of this product will be number of lines in product content.</p>
+            <p class="text-muted">If this is checked, the quantity of this product will be the number of lines in the product content.</p>
         </div>
 
 

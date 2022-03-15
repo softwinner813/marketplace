@@ -5,7 +5,7 @@
         {{ csrf_field() }}
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label for="name">Product's name:</label>
+                <label for="name">Product's Name:</label>
                 <input type="text" class="form-control @error('name', $errors) is-invalid @enderror" id="name"
                        name="name" placeholder="Product name" value="{{ optional($basicProduct) -> name }}"
                        maxlength="100">
@@ -17,7 +17,7 @@
             </div>
 
             <div class="form-group col-md-6">
-                <label for="name">Product's category:</label>
+                <label for="name">Product's Category:</label>
                 <select class="form-control " name="category_id">
                     @foreach($allCategories as $category)
                         <option value="{{ $category -> id }}"
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="description">Product's description:</label>
+            <label for="description">Product's Description:</label>
             <textarea name="description" id="description"
                       class="form-control @error('description', $errors) is-invalid @enderror" rows="20"
                       placeholder="Details about the product">{{ optional($basicProduct) -> description }}</textarea>
@@ -46,7 +46,7 @@
             @enderror
         </div>
         <div class="form-group">
-            <label for="rules">Payment rules:</label>
+            <label for="rules">Payment Rules:</label>
             <textarea name="rules" id="rules" class="form-control @error('rules', $errors) is-invalid @enderror"
                       rows="10"
                       placeholder="Rules of conducting business">{{ optional($basicProduct) -> rules }}</textarea>
@@ -60,7 +60,7 @@
             @enderror
         </div>
         <div class="form-group">
-            <label for="coins">Supported types:</label>
+            <label for="coins">Supported Types:</label>
             <select name="types[]" id="types" multiple class="form-control">
                 @foreach(\App\Purchase::$types as $type => $typeLongName)
                     @if(auth()->user()->vendor->canUseType($type))
@@ -78,7 +78,7 @@
 
         <div class="form-group">
             <!-- <label for="coins">Supported coins:</label> -->
-            <label for="coins">Supported payment:</label>
+            <label for="coins">Supported Payment:</label>
             <select name="coins[]" id="coins" multiple class="form-control">
                 @foreach(config('coins.coin_list') as $coin => $instance)
                     <option value="{{ $coin }}" {{ optional($basicProduct) -> supportsCoin($coin) ? 'selected' : '' }}>{{ strtoupper(\App\Purchase::coinDisplayName($coin)) }}</option>

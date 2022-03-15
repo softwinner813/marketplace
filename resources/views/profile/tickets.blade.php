@@ -5,18 +5,18 @@
 
     <div class="row">
         <div class="col-md-12">
-            <h1 class="mb-3 font-bold text-gray-400 "><i class="fa fa fa-life-ring mr-2"></i>Support</h1>
+            <h1 class="mb-3 font-bold text-gray-400 "><i class="fa fa fa-life-ring mr-2"></i>Support Ticket Center</h1>
             <!-- <hr> -->
             @include('includes.flash.error')
             @include('includes.flash.invalid')
         </div>
 
         <div class="col-md-3">
-            <h3 class="mb-2"><i class="fas fa-ticket-alt mr-2"></i>Tickets</h3>
+            <h3 class="mb-2"><i class="fas fa-ticket-alt mr-2"></i>Support Tickets</h3>
 
             <a href="{{ route('profile.tickets') }}" class="btn btn-block @if($ticket) btn-outline-primary @else btn-primary @endif my-2">
                 <i class="fas fa-plus-circle mr-2"></i>
-                New ticket
+                Create a New Support Ticket
             </a>
 
             @if(auth() -> user() -> tickets() -> exists())
@@ -30,7 +30,7 @@
                                 {{ $currTicket -> title }}
                             </label>
                             @if($currTicket -> solved)
-                                <span class="badge badge-success">Solved</span>
+                                <span class="badge badge-success">Resolved</span>
                             @else
                                 @if($currTicket -> answered)
                                     <span class="badge badge-warning">Answered</span>
@@ -42,7 +42,7 @@
                 </div>
             @else
                 <div class="alert alert-warning text-center">
-                    Your ticket list is empty!
+                    You currently do not have any Support Tickets!
                 </div>
             @endif
 

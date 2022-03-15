@@ -22,13 +22,13 @@
         {{-- Non vendor display --}}
 
         <div class="rounded-md bg-gray-900 px-3 py-2">
-            <h3>Become vendor</h3>
+            <h3>Become A Vendor</h3>
             <hr>
-            <div class="alert alert-warning text-center my-2">You don't have vendor status yet. Become vendor sell products
-                on this store.
+            <div class="alert alert-warning text-center my-2">You currently do not have Vendor status yet. Become A Vendor to sell products
+                on this marketplace.
             </div>
             <div class="text-center">
-                <a href="{{ route('profile.vendor.become') }}" class="btn btn-outline-success btn-md">Become vendor</a>
+                <a href="{{ route('profile.vendor.become') }}" class="btn btn-outline-success btn-md">Become A Vendor</a>
             </div>
             
         </div>

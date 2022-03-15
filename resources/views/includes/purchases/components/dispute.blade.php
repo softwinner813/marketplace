@@ -61,7 +61,7 @@
     @else
         <h3 class="mb-1"><i class="fas fa-exclamation-triangle mr-2"></i>Initiate Dispute</h3>
         <hr>
-        <p class="text-muted">If the described item does not match received item you can initiate dispute against seller. Once dispute is started, it can be resolved in favor of both buyer and vendor</p>
+        <p class="text-muted">If the described item does not match the received item, you can initiate a dispute against the seller. Once a dispute has been started, it can be resolved in favor of both the buyer and the vendor</p>
         <form method="POST" action="{{ route('profile.purchases.dispute', $purchase) }}">
             {{ csrf_field() }}
             <label for="message" class="my-2"><i class="far fa-comment-dots mr-2"></i>Dispute message:</label>

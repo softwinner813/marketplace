@@ -62,6 +62,6 @@
 
     </div>
     @else
-    <div class="alert text-center alert-warning">Your exchange history is empty!</div>
+    <div class="alert text-center alert-warning">Your Exchange History is empty!</div>
     @endif
 @stop

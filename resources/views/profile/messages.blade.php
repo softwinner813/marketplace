@@ -12,7 +12,7 @@
         <div class="col-md-4 rounded-md bg-gray-900 px-3 py-2">
 
             <a href="{{ route("profile.messages") }}">
-                <h3 class="mb-3 text-dark"><i class="fa fa-users mr-2"></i>Conversations</h3>
+                <h3 class="mb-3 text-dark"><i class="fa fa-users mr-2"></i>Message Inbox</h3>
             </a>
             <hr>
 
@@ -20,7 +20,7 @@
                 <div class="list-group">
                     <a href="{{ route("profile.messages") }}" class="list-group-item list-group-item-action @if(!$conversation) bg-info text-white @endif">
                         <i class="fas fa-user-plus"></i>
-                        New Conversation
+                        Send New Message
                     </a>
                     @foreach($usersConversations as $conversationItem)
                         <a href="{{ route('profile.messages', $conversationItem) }}"
@@ -38,25 +38,25 @@
                     @endforeach
                     <a href="{{ route("profile.messages.conversations.list") }}" class="list-group-item list-group-item-action list-group-item-indigo @isroute('profile.messages.conversations.list') bg-info text-white @endisroute">
                         <i class="fas fa-list"></i>
-                        All Conversations
+                        All Messages
                     </a>
                 </div>
 
             @else
-                <div class="alert alert-warning text-center">You don't have any conversations!</div>
+                <div class="alert alert-warning text-center">You currently do not have any messages!</div>
             @endif
         </div>
         <div class="col-md-8 ">
             <div class="rounded-md bg-gray-900 px-3 py-2">
                 @if(!$conversation)
-                    <h3 class="mb-3"><i class="far fa-comments mr-2"></i>New conversation</h3>
+                    <h3 class="mb-3"><i class="far fa-comments mr-2"></i>New Message</h3>
                     <hr>
                     <form action="{{ route('profile.messages.conversation.new') }}" method="POST" class="my-2">
                         {{ csrf_field() }}
-                        <input type="text" id="username" name="username" placeholder="Username of the receiver..."
+                        <input type="text" id="username" name="username" placeholder="Username of the person you want to message"
                                class="appearance-none w-full rounded-md shadow-md bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2 my-2 w-100" value="{{$new_conversation_other_party}}">
                         <textarea name="message" class="form-control bg-gray-700 px-3 text-gray-400 h-10 cursor-pointer mt-2 border-indigo-400 border-opacity-50 focus:border-2 my-2" rows="5"
-                                  placeholder="New message here"></textarea>
+                                  placeholder="Type your message here"></textarea>
                         <button type="submit" class="btn btn-primary btn-block">Send message</button>
                     </form>
                 @else
@@ -73,7 +73,7 @@
                     @endif
 
                     @if($conversation -> messages -> isEmpty())
-                        <div class="alert alert-warning my-2">There is no messages in this conversation!</div>
+                        <div class="alert alert-warning my-2">There are no messages in this conversation!</div>
                     @else
                         @foreach($conversationMessages as $message)
                             <div class="card my-2 

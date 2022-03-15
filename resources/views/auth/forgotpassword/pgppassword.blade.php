@@ -26,7 +26,7 @@
                     <div class="form-group text-center">
                         <div class="row">
                             <div class="col-xs-12 col-md-4 offset-md-4">
-                                <button type="submit" class="btn btn-outline-primary btn-block" style="margin-top: 15px;">Send</button>
+                                <button type="submit" class="btn btn-outline-primary btn-block" style="margin-top: 15px;">Submit</button>
                             </div>
                         </div>
                     </div>

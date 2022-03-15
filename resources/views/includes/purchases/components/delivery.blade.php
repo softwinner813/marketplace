@@ -27,7 +27,7 @@
                 <textarea class="form-control disabled" readonly rows="10">{{ $purchase -> delivered_product }}</textarea>
             @elseif($purchase -> isBuyer())
                 <div class="alert alert-warning">
-                    You must pay to address and the system will deliver you content here.
+                    You must pay to the wallet address, and the system will deliver your items here.
                 </div>
             @endif
         @endif

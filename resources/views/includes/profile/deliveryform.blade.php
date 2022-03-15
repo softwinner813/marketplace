@@ -39,10 +39,10 @@
         </tbody>
     </table>
 @else
-    <div class="alert alert-warning">You don't have any offer please add at least one!</div>
+    <div class="alert alert-warning">You currently do not have any offers, please add at least one offer!</div>
 @endif
 
-<h3 class="mt-3">Add delivery option</h3>
+<h3 class="mt-3">Add Delivery option</h3>
 <hr>
 <form method="POST" action="{{ route('profile.vendor.product.delivery.new', $physicalProduct -> product) }}">
     {{ csrf_field() }}
@@ -93,7 +93,7 @@
     </div>
 </form>
 
-<h3 class="mt-3">Shipping countries</h3>
+<h3 class="mt-3">Shipping Countries</h3>
 <hr>
 <form method="POST" action="{{ route('profile.vendor.product.delivery.options', $physicalProduct) }}">
     {{ csrf_field() }}

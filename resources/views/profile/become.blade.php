@@ -47,7 +47,7 @@
     <form action="{{ route('profile.vendor.become') }}" class="form-inline">
         <button type="submit" class="btn btn-sm btn-success">
             <i class="fas fa-file-signature mr-2"></i>
-            Become a Vendor
+            Become A Vendor
         </button>
     </form>
 
